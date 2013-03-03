@@ -11,7 +11,7 @@ module Jekyll
       site.categories.keys.sort.each do |category|
         url = "/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/"		
 		
-		html << "<li><a href='#{url}'>#{category}</a></li>\n"
+        html << "<li><a href='#{url}'>#{category}</a></li>\n"
 		
         #count = site.categories[category].size
         #html << "<li><a href='#{url}'>#{category} (#{count})</a></li>\n"        
